@@ -1,0 +1,69 @@
+/* Create CSS variables */
+:root {
+    --white: hsl(0, 0%, 100%);
+    --lightGray: hsl(212, 45%, 89%);
+    --grayishBlue: hsl(220, 15%, 55%);
+    --darkBlue: hsl(218, 44%, 22%)
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--lightGray);
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 12px 7px 20px 6px rgb(57 75 84 / 8%);
+}
+
+img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-weight: 700;
+    width: 300px;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    width: 250px;
+    color: var(--grayishBlue);
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+footer {
+
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 375px) {
+    main [
+        width: 80%;
+    ]
+} 
